@@ -6,6 +6,9 @@
     <script>
     window.SquareMart = {};
     </script>
+    <link rel="icon" 
+    type="image/png" 
+    href="circle.png">
 
 <base href="">
 <title>Shifting Gears</title>
@@ -24,7 +27,7 @@
       
     
 
-      <div id="header" role="banner" style="background-color: white;">
+      <div id="header" role="banner" style="display: none">
       <div class="slidebar">
  	
 
@@ -33,7 +36,7 @@
 
       </div>
 
-      <div id="banner" role="banner" data-palette="banner" data-typeset="banner">
+      <div id="banner" role="banner" data-palette="banner" data-typeset="banner" style="background-color: #0e63cb;">
         
           
             <div class="banner has-image" data-collection-id="57599beab654f99a5c99f156">    
@@ -43,6 +46,14 @@
       <style>
           img {
   width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 799px) {
+  img {
+  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,11 +81,34 @@
               <em>Shifting Gears</em> is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity. In this remarkable symphony of essays adapted and expanded from his groundbreaking podcast, John Green reviews different facets of the human-centered planet—from the QWERTY keyboard and Staphylococcus aureus to the Taco Bell menu—on a five-star scale.
               
               </p>
-
               
-              <!-- <div class="homepage-scroll">
-                <a href="javascript:SquareMart.Utils.smoothScrollTo(window.innerHeight)"></a>
-              </div> -->
+
+              <a href="https://amazon.com" target="_blank" class="myButton">Buy on Amazon</a>&nbsp; &nbsp;<a href="#" class="myButton" target="_blank">View Sample</a>
+<style>
+.myButton {
+	background-color:#0e63cb;
+	border-radius:28px;
+	/* border:1px solid #0e63cb; */
+	display:inline-block;
+	cursor:pointer;
+	color:white !important;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size:20px;
+  font-weight: 400;
+	padding:5px 30px;
+	text-decoration:none;
+}
+.myButton:onclick {
+	background-color:#0e63cb;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+              
+              
               
             </div>
           </div>
